@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Aria Horak | aweeri.com</title>
+    <meta name="title" content="Aria Horak | aweeri.com">
+    <meta name="description" content="Aweeri's Home Page">
+    <meta name="keywords" content="Aria Horak, aweeri, TLEscope, SatRX, orbital mechanics, C programming, satellite tracking, SGP4, open source">
+    <meta name="author" content="Aria Horak">
+    <link rel="canonical" href="https://aweeri.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aweeri.com/">
+    <meta property="og:title" content="Aria Horak | aweeri.com">
+    <meta property="og:description" content="Aweeri's Home Page">
+
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aweeri.com/">
+    <meta property="twitter:title" content="Aria Horak | aweeri.com">
+    <meta property="twitter:description" content="Aweeri's Home Page">
+    <meta property="twitter:image" content="https://aweeri.com/ICONHEREPLS">
+    
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/ICONHEREPLS">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">aweeri.com</a>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="https://github.com/aweeri" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-controls">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+                <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Aria Wiktoria Horak</h1>
+            <span id="age-display" class="age-badge"></span>
+            <p>I build useful software, interactive simulations, and open-source tools. Passionate about orbital mechanics and satellites, C, and creating simple solutions to complex problems.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="https://github.com/aweeri" class="btn secondary" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>I'm a Teleinformatics student at the Silesian University of Technology in Poland. <br> I'm the president of a student's association SKN Dipol, and I'm an active member of other associations, such as Silesian Aerospace Technologies. </p>
+            <p>My hobbies and skills span a very wide range of categories, including aerospace engineering, aviation, cinematography, indie gaming, electronics, RF electronics, home automation, and some light coding whenever an opportunity arises.</p>
+            <p>I have ADHD. This results in me hyperfocusing on projects a bit too hard, which leads to great things. Sometimes, that is.  </p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>TLEscope</h3>
+                    <span class="badge">Open Source</span>
+                </div>
+                <p>A satellite visualization tool designed to transform Two-Line Element (TLE) sets into intuitive, interactive data. Track the past, current and future positions of satellites, Earth, and the Moon across 3D and 2D environments.</p>
+                <div class="tech-stack">
+                    <span>C</span>
+                    <span>Raylib</span>
+                    <span>SGP4</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://tlescope.eu/" target="_blank">Website &rarr;</a>
+                    <a href="https://github.com/aweeri/TLEscope" target="_blank">Repository &rarr;</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>SatRX.wiki</h3>
+                    <span class="badge">In Development</span>
+                </div>
+                <p>A community-oriented resource meant to provide reliable and up-to-date information regarding satellite radio downlink frequencies and schedules, alongside other useful resources.</p>
+                <div class="tech-stack">
+                    <span>Satellites</span>
+                    <span>Radio</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://SatRX.wiki/" target="_blank">Website &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
+        <p>Whether you want to collaborate on a project, talk about hobbies, or just say hi.</p>
+        <div class="cta-buttons" style="justify-content: center; margin-top: 2rem;">
+            <a href="https://discord.gg/uDmNsuZR4W" class="btn primary">Join the Discord</a>
+            <a href="mailto:aria@aweeri.com" class="btn secondary">Send me an Email</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Aweeri. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
